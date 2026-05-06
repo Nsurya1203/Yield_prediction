@@ -1,0 +1,171 @@
+/* ================= GLOBAL RESET ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+    transition: 0.3s ease;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Navbar Hover Underline Animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #4caf50;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ================= GENERAL BUTTON STYLE ================= */
+
+button,
+.btn {
+    padding: 12px 22px;
+    border-radius: 8px;
+    border: none;
+    background: #2e7d32;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    background: #43a047;
+    transform: translateY(-2px);
+}
+
+/* ================= PAGE CONTAINER ================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 60px auto; /* top margin for fixed navbar */
+}
+
+/* ================= CARD STYLE ================= */
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= FORM ELEMENTS ================= */
+
+input,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #2e7d32;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+/* ================= HEADINGS ================= */
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* ================= UTILITY SPACING ================= */
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    .nav-links a {
+        margin-left: 15px;
+    }
+
+    .container {
+        width: 95%;
+        margin-top: 100px;
+    }
+}

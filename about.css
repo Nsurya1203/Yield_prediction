@@ -1,0 +1,102 @@
+/* ===== BACKGROUND ===== */
+
+body{
+background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef") no-repeat center center/cover;
+margin:0;
+font-family:Poppins, sans-serif;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.about-page{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:40px 20px;
+gap:25px;
+}
+
+/* ===== TITLE ===== */
+
+.about-page h1{
+font-size:42px;
+margin-bottom:10px;
+letter-spacing:1px;
+}
+
+/* ===== CARDS GRID ===== */
+
+.about-cards{
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+gap:25px;
+max-width:900px;
+width:100%;
+}
+
+/* ===== PREMIUM GLASS CARD ===== */
+
+.about-card{
+background:rgba(255,255,255,0.15);
+padding:25px;
+border-radius:18px;
+width:280px;
+
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+
+border:1px solid rgba(255,255,255,0.25);
+
+box-shadow:0 8px 25px rgba(0,0,0,0.4);
+
+transition:0.3s;
+}
+
+.about-card:hover{
+transform:translateY(-6px) scale(1.03);
+box-shadow:0 12px 35px rgba(0,0,0,0.6);
+}
+
+/* ===== CARD TEXT ===== */
+
+.about-card h3{
+color:#025005;
+font-size:19px;
+font-weight:700;  /* stronger bold */
+}
+
+.about-card p{
+color:#ffffff;
+font-size:15px;
+line-height:1.6;
+font-weight:600;   /* 👈 makes it bold */
+letter-spacing:0.5px; /* improves readability */
+}
+/* ===== MISSION SECTION ===== */
+
+.mission{
+max-width:750px;
+}
+
+.mission h2{
+font-size:32px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.mission p{
+font-size:17px;
+line-height:1.7;
+font-weight:600;   /* 👈 important */
+color:#ffffff;
+letter-spacing:0.5px;
+}
+
+.about-card p,
+.mission p {
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}

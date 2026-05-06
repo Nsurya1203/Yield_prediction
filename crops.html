@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Crops Guide - AgriAI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="crops.css">
+
+</head>
+
+<body>
+
+<nav>
+<div class="logo">🌾 AgriAI</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="predict.html">Predict</a>
+<a href="crops.html">Crops Guide</a>
+<a href="about.html">About</a>
+</div>
+</nav>
+
+<section class="crops-page">
+
+<h1>Crop Requirements Guide</h1>
+<p>Click a crop to see the ideal farming conditions.</p>
+
+<div class="crop-grid">
+
+<button class="crop-btn" onclick="showCrop('rice',this)">🌾 Rice</button>
+<button class="crop-btn" onclick="showCrop('wheat',this)">🌿 Wheat</button>
+<button class="crop-btn" onclick="showCrop('maize',this)">🌽 Maize</button>
+<button class="crop-btn" onclick="showCrop('cotton',this)">🌱 Cotton</button>
+<button class="crop-btn" onclick="showCrop('groundnut',this)">🥜 Groundnut</button>
+
+<button class="crop-btn" onclick="showCrop('millets',this)">🌾 Millets</button>
+<button class="crop-btn" onclick="showCrop('sugarcane',this)">🎋 Sugarcane</button>
+<button class="crop-btn" onclick="showCrop('soybean',this)">🫘 Soybean</button>
+<button class="crop-btn" onclick="showCrop('barley',this)">🌿 Barley</button>
+<button class="crop-btn" onclick="showCrop('sunflower',this)">🌻 Sunflower</button>
+
+<button class="crop-btn" onclick="showCrop('tomato',this)">🍅 Tomato</button>
+<button class="crop-btn" onclick="showCrop('potato',this)">🥔 Potato</button>
+<button class="crop-btn" onclick="showCrop('onion',this)">🧅 Onion</button>
+<button class="crop-btn" onclick="showCrop('chilli',this)">🌶 Chilli</button>
+<button class="crop-btn" onclick="showCrop('garlic',this)">🧄 Garlic</button>
+
+<button class="crop-btn" onclick="showCrop('cabbage',this)">🥬 Cabbage</button>
+<button class="crop-btn" onclick="showCrop('cauliflower',this)">🥦 Cauliflower</button>
+<button class="crop-btn" onclick="showCrop('carrot',this)">🥕 Carrot</button>
+<button class="crop-btn" onclick="showCrop('peas',this)">🟢 Peas</button>
+<button class="crop-btn" onclick="showCrop('lentils',this)">🫘 Lentils</button>
+
+<button class="crop-btn" onclick="showCrop('mustard',this)">🌼 Mustard</button>
+<button class="crop-btn" onclick="showCrop('tea',this)">🍃 Tea</button>
+<button class="crop-btn" onclick="showCrop('coffee',this)">☕ Coffee</button>
+<button class="crop-btn" onclick="showCrop('banana',this)">🍌 Banana</button>
+<button class="crop-btn" onclick="showCrop('mango',this)">🥭 Mango</button>
+
+</div>
+
+<div id="cropDetails" class="crop-details"></div>
+
+</section>
+
+<script src="crops.js"></script>
+
+</body>
+</html>
